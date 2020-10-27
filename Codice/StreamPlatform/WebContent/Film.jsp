@@ -1,5 +1,8 @@
+<%@page import="java.util.Iterator"%>
+<%@page import="java.util.ArrayList"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+<%@ page import="bean.*" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -33,8 +36,16 @@
         <a class="nav-link" href="ServletSerieTv">Serie TV</a>
       </li>
     </ul>
-    
-    
+   	
+   	<ul class="navbar-nav " id="ULSearch">
+    	<li class="nav-item search" id="searchLI">
+      		<form class="form-inline" action="ricevi" method="get">
+    			<input class="form-control mr-sm-2" name="r" id="search" type="search" placeholder="Cerca" aria-label="Search">
+    			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Cerca</button>
+  	  	</form>
+  	  </li>
+    </ul>
+   	
     <ul class="navbar-nav" id="ULPulsanti">
     	<li><a href="Login.jsp">LOGIN</a></li>
     	<li><a href="Registrazione.jsp">REGISTRATI</a></li>
@@ -43,48 +54,25 @@
 </nav>
 
 
-
-
-<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="d-block w-100" src="Immagini/operation.png" alt="First slide">
-      <div class="carousel-caption d-none d-md-block">
-    		<h5>TITOLO</h5>
-    		<p>PREZZO</p>
-  		</div>
+<div class="container">
+<%ArrayList<FilmDB> filmList=(ArrayList<FilmDB>)session.getAttribute("filmList");
+Iterator it= filmList.iterator();
+while(it.hasNext()){
+	FilmDB film=(FilmDB)it.next();
+%>
+  <div class="row">
+    <div class="col-sm">
+      <%= film.getTitolo() %>
     </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="Immagini/2.jpg" alt="Second slide">
-      <div class="carousel-caption d-none d-md-block">
-    		<h5>TITOLO</h5>
-    		<p>PREZZO</p>
-  		</div>
+    <div class="col-sm">
+      One of three columns
     </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="Immagini/3.jpg" alt="Third slide">
-      <div class="carousel-caption d-none d-md-block">
-    		<h5 style="color: purple;font-size: 50px;">JOKER</h5>
-    		<p style="color:white;font-size: 20px;font-style: italic;">the worst part about having mental illness is people expect you to behave as if you don't</p>
-  		</div>
+    <div class="col-sm">
+      One of three columns
     </div>
   </div>
-  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
+  <% } %>
 </div>
-
-<script type="text/javascript">
-$('.carousel').carousel({
-	  interval:500,
-	  pause:"hover"
-	})
-</script>
 
 
 

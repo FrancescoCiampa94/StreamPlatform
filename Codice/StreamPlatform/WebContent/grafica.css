@@ -25,7 +25,20 @@
 			background-color:green;
 		}
 		#ULSearch{
-			margin-right: 45%;
+			margin-right: 30%;
+		}
+		#ULPulsanti{
+			background-color:dark;
+			margin-right: 2%;
+		}
+		#ULPulsanti li{
+			padding-right: 10px;
+			font-family: 'East Sea Dokdo', cursive;
+		}
+		#ULPulsanti li a:hover{
+			transition:3s;
+			color: red;
+			text-decoration: none;
 		}	
 			
 			
@@ -35,12 +48,15 @@
 		}
 		.carousel-inner{
 			sheight:750px;
-			height:400px;
-			width: 60%;
-			margin-left: 20%;
+			sheight:400px;
+			width: 100%;
+			smargin-left: 20%;
+		}
+		.carousel-item img{
+			sheight: 100%;
 		}
 		.carousel-caption{
-			transform: translateY(-50%);
+			margin-bottom: 250px;
 		}
 		
 		
