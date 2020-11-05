@@ -4,6 +4,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class FilmDB{
+	private int id;
 	private String titolo;
 	private String immagine;
 	private Date annoUscita;
@@ -23,8 +24,9 @@ public class FilmDB{
 		}
 
 
-		public FilmDB(String titolo, String immagine, Date annoUscita, int durata, String registi, String attori,
+		public FilmDB(int id,String titolo, String immagine, Date annoUscita, int durata, String registi, String attori,
 				String genere, String lingua, String trailer, String descrizione, Date dataAggiunta, double prezzo) {
+			this.id=id;
 			this.titolo = titolo;
 			this.immagine = immagine;
 			this.annoUscita = annoUscita;
@@ -37,6 +39,17 @@ public class FilmDB{
 			this.descrizione = descrizione;
 			this.dataAggiunta = dataAggiunta;
 			this.prezzo = prezzo;
+		}
+
+		
+		
+		public int getId() {
+			return id;
+		}
+
+
+		public void setId(int id) {
+			this.id = id;
 		}
 
 
@@ -161,12 +174,16 @@ public class FilmDB{
 		}
 
 
+		@Override
 		public String toString() {
-			return "FilmDB [titolo=" + titolo + ", immagine=" + immagine + ", annoUscita=" + annoUscita + ", durata="
-					+ durata + ", registi=" + registi + ", attori=" + attori + ", genere=" + genere + ", lingua="
-					+ lingua + ", trailer=" + trailer + ", descrizione=" + descrizione + ", dataAggiunta="
+			return "FilmDB [id=" + id + ", titolo=" + titolo + ", immagine=" + immagine + ", annoUscita=" + annoUscita
+					+ ", durata=" + durata + ", registi=" + registi + ", attori=" + attori + ", genere=" + genere
+					+ ", lingua=" + lingua + ", trailer=" + trailer + ", descrizione=" + descrizione + ", dataAggiunta="
 					+ dataAggiunta + ", prezzo=" + prezzo + "]";
 		}
+
+
+		
 		
 		
 }

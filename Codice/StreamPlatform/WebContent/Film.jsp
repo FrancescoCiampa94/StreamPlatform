@@ -55,23 +55,23 @@
 
 
 <div class="container">
+  <div class="row">
 <%ArrayList<FilmDB> filmList=(ArrayList<FilmDB>)session.getAttribute("filmList");
 Iterator it= filmList.iterator();
 while(it.hasNext()){
 	FilmDB film=(FilmDB)it.next();
 %>
-  <div class="row">
+
     <div class="col-sm">
-      <%= film.getTitolo() %>
+    	<ul class="gridFilm">
+    		<li><img alt="" src="Immagini/3.jpg" style="width: 25%;"></li>
+      		<li style="text-transform: capitalize;"><%= film.getTitolo() %></li>
+      		<li><a href="paginaFilm"><input type="button" value="VEDI"></a></li>
+    	</ul>
     </div>
-    <div class="col-sm">
-      One of three columns
-    </div>
-    <div class="col-sm">
-      One of three columns
-    </div>
-  </div>
+
   <% } %>
+  </div>
 </div>
 
 

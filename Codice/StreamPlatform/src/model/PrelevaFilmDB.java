@@ -25,6 +25,7 @@ public class PrelevaFilmDB {
 		ps=con.prepareStatement(query);
 		rs=ps.executeQuery();
 		while(rs.next()) {
+			film.setId(rs.getInt("id"));
 			film.setTitolo(rs.getString("titolo"));
 			film.setImmagine(rs.getString("immagine"));
 			film.setAnnoUscita(rs.getDate("anno"));

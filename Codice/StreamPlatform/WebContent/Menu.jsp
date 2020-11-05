@@ -21,8 +21,15 @@
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
+  
   <div class="collapse navbar-collapse" id="navbarText">
-    <ul class="navbar-nav mr-auto">
+  
+  <ul class="navbar-nav" id="ULPulsantiResponsive">
+    	<li><a href="Login.jsp">LOGIN</a></li>
+    	<li><a href="Registrazione.jsp">REGISTRATI</a></li>
+    </ul>
+  
+    <ul class="navbar-nav mr-auto ">
       <li class="nav-item active">
         <a class="nav-link" href="Menu.jsp">Home <span class="sr-only">(current)</span></a>
       </li>

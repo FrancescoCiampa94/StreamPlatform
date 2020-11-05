@@ -31,7 +31,14 @@
 			background-color:dark;
 			margin-right: 2%;
 		}
+		#ULPulsantiResponsive{
+			display: none;
+		}
 		#ULPulsanti li{
+			padding-right: 10px;
+			font-family: 'East Sea Dokdo', cursive;
+		}
+		#ULPulsantiResponsive li{
 			padding-right: 10px;
 			font-family: 'East Sea Dokdo', cursive;
 		}
@@ -87,9 +94,9 @@
 			margin-top:15px;
 			font-size: 30px;
 			transition: .6s ;
-			-webkit-animation: cssAnimation 15s 16 linear;
-			-moz-animation: cssAnimation 15s 16 ease;
-			-o-animation: cssAnimation 15s 16 ease;
+			-webkit-animation: cssAnimation 15s infinite linear;
+			-moz-animation: cssAnimation 15s infinite ease;
+			-o-animation: cssAnimation 15s infinite ease;
 		}
 		@-webkit-keyframes cssAnimation {
 		from { -webkit-transform: rotate(360deg) scale(1) skew(1deg) translate(0px); }
@@ -117,15 +124,29 @@
 			list-style: none;
 		}
 
-/* 	RESPONSIVE */		
+/* 	RESPONSIVE NAVBAR */		
 		@media screen and (max-width: 1200px){
-			.footer p{
-				margin-left: 40px;
+			#ULPulsanti{
+				display: none;
+			}
+			#ULPulsantiResponsive{
+				display: block;
 			}
 		}
 
 
-.page-footer{
-	background-color: red;
+		.page-footer{
+			background-color: red;
 	
-}
+		}
+/*	PAGINA FILM */
+		
+		.container{
+			margin-top: 5%;
+		}
+		.gridFilm li{
+			list-style: none;
+		}
+		.gridFilm a:hover{
+			text-decoration: none;
+		}
