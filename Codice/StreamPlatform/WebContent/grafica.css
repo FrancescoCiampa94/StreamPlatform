@@ -25,7 +25,27 @@
 			background-color:green;
 		}
 		#ULSearch{
-			margin-right: 45%;
+			margin-right: 30%;
+		}
+		#ULPulsanti{
+			background-color:dark;
+			margin-right: 2%;
+		}
+		#ULPulsantiResponsive{
+			display: none;
+		}
+		#ULPulsanti li{
+			padding-right: 10px;
+			font-family: 'East Sea Dokdo', cursive;
+		}
+		#ULPulsantiResponsive li{
+			padding-right: 10px;
+			font-family: 'East Sea Dokdo', cursive;
+		}
+		#ULPulsanti li a:hover{
+			transition:3s;
+			color: red;
+			text-decoration: none;
 		}	
 			
 			
@@ -35,12 +55,15 @@
 		}
 		.carousel-inner{
 			sheight:750px;
-			height:400px;
-			width: 60%;
-			margin-left: 20%;
+			sheight:400px;
+			width: 100%;
+			smargin-left: 20%;
+		}
+		.carousel-item img{
+			sheight: 100%;
 		}
 		.carousel-caption{
-			transform: translateY(-50%);
+			margin-bottom: 250px;
 		}
 		
 		
@@ -71,9 +94,9 @@
 			margin-top:15px;
 			font-size: 30px;
 			transition: .6s ;
-			-webkit-animation: cssAnimation 15s 16 linear;
-			-moz-animation: cssAnimation 15s 16 ease;
-			-o-animation: cssAnimation 15s 16 ease;
+			-webkit-animation: cssAnimation 15s infinite linear;
+			-moz-animation: cssAnimation 15s infinite ease;
+			-o-animation: cssAnimation 15s infinite ease;
 		}
 		@-webkit-keyframes cssAnimation {
 		from { -webkit-transform: rotate(360deg) scale(1) skew(1deg) translate(0px); }
@@ -101,15 +124,29 @@
 			list-style: none;
 		}
 
-/* 	RESPONSIVE */		
+/* 	RESPONSIVE NAVBAR */		
 		@media screen and (max-width: 1200px){
-			.footer p{
-				margin-left: 40px;
+			#ULPulsanti{
+				display: none;
+			}
+			#ULPulsantiResponsive{
+				display: block;
 			}
 		}
 
 
-.page-footer{
-	background-color: red;
+		.page-footer{
+			background-color: red;
 	
-}
+		}
+/*	PAGINA FILM */
+		
+		.container{
+			margin-top: 5%;
+		}
+		.gridFilm li{
+			list-style: none;
+		}
+		.gridFilm a:hover{
+			text-decoration: none;
+		}

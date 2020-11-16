@@ -21,15 +21,8 @@
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  
   <div class="collapse navbar-collapse" id="navbarText">
-  
-  <ul class="navbar-nav" id="ULPulsantiResponsive">
-    	<li><a href="Login.jsp">LOGIN</a></li>
-    	<li><a href="Registrazione.jsp">REGISTRATI</a></li>
-    </ul>
-  
-    <ul class="navbar-nav mr-auto ">
+    <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
         <a class="nav-link" href="Menu.jsp">Home <span class="sr-only">(current)</span></a>
       </li>
@@ -40,8 +33,8 @@
         <a class="nav-link" href="ServletSerieTv">Serie TV</a>
       </li>
     </ul>
-    
-    
+   	
+   	
     <ul class="navbar-nav" id="ULPulsanti">
     	<li><a href="Login.jsp">LOGIN</a></li>
     	<li><a href="Registrazione.jsp">REGISTRATI</a></li>
@@ -51,47 +44,6 @@
 
 
 
-
-<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="d-block w-100" src="Immagini/operation.png" alt="First slide">
-      <div class="carousel-caption d-none d-md-block">
-    		<h5>TITOLO</h5>
-    		<p>PREZZO</p>
-  		</div>
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="Immagini/2.jpg" alt="Second slide">
-      <div class="carousel-caption d-none d-md-block">
-    		<h5>TITOLO</h5>
-    		<p>PREZZO</p>
-  		</div>
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="Immagini/3.jpg" alt="Third slide">
-      <div class="carousel-caption d-none d-md-block">
-    		<h5 style="color: purple;font-size: 50px;">JOKER</h5>
-    		<p style="color:white;font-size: 20px;font-style: italic;">the worst part about having mental illness is people expect you to behave as if you don't</p>
-  		</div>
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-
-<script type="text/javascript">
-$('.carousel').carousel({
-	  interval:500,
-	  pause:"hover"
-	})
-</script>
 
 
 
